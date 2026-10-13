@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEXPO ITSEC SUCRE 2026 - Jhonatan Albert Romero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #0b3c5d;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #328cc1;
+        }
+        nav button {
+            background-color: inherit;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        nav button:hover, nav button.active {
+            background-color: #1d2731;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .galeria img {
+            width: 260px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+        .info-card {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-left: 5px solid #328cc1;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        video {
+            display: block;
+            margin: 15px auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1d2731;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FEXPO ITSEC SUCRE</h1>
+    <p>Trabajo Práctico - Reporte de Stands</p>
+</header>
+
+<nav>
+    <button class="tab-link active" onclick="openTab(event, 'caratula')">Carátula</button>
+    <button class="tab-link" onclick="openTab(event, 'stand1')">Stand 1</button>
+    <button class="tab-link" onclick="openTab(event, 'stand2')">Stand 2</button>
+    <button class="tab-link" onclick="openTab(event, 'stand3')">Stand 3</button>
+</nav>
+
+<div class="container">
+
+    <!-- PESTAÑA 1: CARÁTULA -->
+    <div id="caratula" class="tab-content active">
+        <div style="text-align: center;">
+            <h2 style="color: #0b3c5d;">INSTITUTO TÉCNICO SUPERIOR DE EDUCACIÓN COMERCIAL</h2>
+            <h3 style="color: #328cc1;">ITSEC SUCRE</h3>
+            <hr style="width: 60%; border: 1px solid #328cc1; margin: 20px auto;">
+            
+            <div style="display: inline-block; text-align: left; background: #f9f9f9; padding: 25px 40px; border-radius: 8px; border: 1px solid #e0e0e0; font-size: 1.1em; line-height: 1.8;">
+                <p><strong>Estudiante:</strong> Jhonatan Albert Romero</p>
+                <p><strong>Curso:</strong> 1 "C"</p>
+                <p><strong>Carrera:</strong> Sistemas Informáticos</p>
+                <p><strong>materia:</strong> Diseño web</p>
+                <p><strong>Docente:</strong> Hugo Alfredo Taborga Paz</p>
+                <p><strong>Año:</strong> 2026</p>
+                <p><strong>Lugar:</strong> Sucre - Bolivia</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PESTAÑA 2: STAND 1 -->
+    <div id="stand1" class="tab-content">
+        <h2>Stand 1: El Mágico Mundo de los Payasos (Payasita Lunita)</h2>
+        <div class="info-card">
+            <p><strong>Emprendimiento:</strong> Agrupación "El Mágico Mundo de los Payasos" / Payasita Lunita</p>
+            <p><strong>Qué venden:</strong> Shows infantiles, animación de eventos y espectáculos</p>
+            <p><strong>WhatsApp:</strong> 75794751</p>
+            <p><strong>Redes Sociales:</strong> TikTok e Instagram: @Lunita oficial</p>
+        </div>
+
+        <h3>Fotografías del Stand (Mínimo 3)</h3>
+        <div class="galeria">
+            <img src="IMG-20261007-WA0014(1).jpg" alt="Banner Payasita Lunita">
+            <img src="IMG-20261007-WA0014(1).jpg" alt="Foto del Stand 1">
+            <img src="payaso.jpg" alt="Foto mía en el Stand 1">
+        </div>
+
+        <h3>Video Entrevista (Máx. 20 segundos)</h3>
+        <video controls width="400">
+            <source src="PAYASITA.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+    <!-- PESTAÑA 3: STAND 2 -->
+    <div id="stand2" class="tab-content">
+        <h2>Stand 2: Dead Leaf (Coctelería y Bebidas)</h2>
+        <div class="info-card">
+            <p><strong>Emprendimiento:</strong> Dead Leaf</p>
+            <p><strong>Qué venden:</strong> Coctelería con vodka, preparados de bebidas y bolsitas temáticas de distintos sabores</p>
+            <p><strong>Ubicación:</strong> FEXPO ITSEC Sucre</p>
+        </div>
+
+        <h3>Fotografías del Stand (Mínimo 3)</h3>
+        <div class="galeria">
+            <img src="BOLO.jpg" alt="Preparación de Bebidas Dead Leaf">
+            <img src="COCA.jpg" alt="Productos Dead Leaf">
+            <img src="SABORES.jpg" alt="Foto mía en el Stand 2">
+        </div>
+
+        <h3>Video Entrevista (Máx. 20 segundos)</h3>
+        <video controls width="400">
+            <source src="cocas machucadas.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+    <!-- PESTAÑA 4: STAND 3 -->
+    <div id="stand3" class="tab-content">
+        <h2>Stand 3: Grupo Sion - Asesoria Inmobiliaria</h2>
+        <div class="info-card">
+            <p><strong>Emprendimiento:</strong> Grupo Sion (Asesor Inmobiliario Independiente: Claudio Paco Romero)</p>
+            <p><strong>Qué venden:</strong> Terrenos y membresías en proyectos como Kalomai Park, La Arboleda del Este, Complejo Acuático Zuriel y Urubó</p>
+            <p><strong>Contacto:</strong> 79305000</p>
+        </div>
+
+        <h3>Fotografías del Stand (Mínimo 3)</h3>
+        <div class="galeria">
+            <img src="6363.jpg" alt="Banner Grupo Sion">
+            <img src="SION12.jpg" alt="Foto del Stand 3">
+            <img src="GRUPO SION.jpg" alt="Foto mía en el Stand 3">
+        </div>
+
+        <h3>Video Entrevista (Máx. 20 segundos)</h3>
+        <video controls width="400">
+            <source src="Grupo sion.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+</div>
+
+<footer>
+    <p>Jhonatan Albert Romero | Curso 1 "C" | Sistemas Informáticos | 2026</p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("active");
+        }
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
+
+</body>
+</html>
